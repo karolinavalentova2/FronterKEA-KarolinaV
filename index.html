@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="120">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Kea mobile app</title>
+</head>
+
+<body>
+        <img id="keaLogo" src="images/color-kea.png" alt="KEA logo">
+        <h3>Københavns Erhvervsakademi / Copenhagen School of Design and Technology</h3>
+    
+   
+        <h5>Username</h5>
+        <input type="text" id="username" class="login" placeholder="..." name="username" /><br>
+        <h5>Password</h5>
+        <input type="password" id="password" class="login" placeholder="..." name="password" /><br>
+        <h5>Language</h5>
+        <select>
+            <option value="saab">English</option>
+            <option value="opel">Danish</option>
+        </select>
+        <button name="login" id="buttonLogin" onclick="doLogin()">Login</button>
+   
+    
+    <div id="success">
+        <div id="img">KEA</div>
+        <div id="desc">Login succesfull, grabbing ya' data!</div>
+    </div>
+        <div id="fail">
+        <div id="imgFail">KEA</div>
+        <div id="descFail">Login failed, invalid credentials!</div>
+        <div id="descFail">Login failed, invalid credentials!</div>
+    </div>
+    <div id="footer"><p>&#169;Karolina Valentova / KEA 2018</p></div>
+    </body>
+</html>

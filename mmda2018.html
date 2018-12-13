@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="120">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Kea mobile app</title>
+</head>
+
+<body>
+    <nav id="nav-menu">
+        <a href="home.html" id="home"></a>
+        <div class="navBack"></div>
+        <a href="chatroom.html" id="message"></a>
+        <div id="notification"></div>
+        <a href="profile.html" id="profile"></a>
+        <a href="settings.html" id="settings"></a>
+    </nav>
+    <hr>
+    <h1>MMD A 2018</h1>
+    <div id="background-box">
+        <div id="profile-pannel">
+            <br>
+            <div class="h8"><img src="images/prof1.png" alt=""> Hi folks!</div>
+            <hr>
+            <div class="h8"><img src="images/prof2.png" alt=""> Some homework? Hope not.</div>
+            <hr>
+            <div class="h8"><img src="images/prof3.png" alt=""> Dunno</div>
+            <hr>
+            <div class="h8"><img src="images/prof4.png" alt=""> I think my mom forgot to make my lunch</div>
+            <hr>
+            <div class="h8"><img src="images/prof1.png" alt=""> I'm getting hungry...</div>
+            <hr>
+            <div class="h8">
+                <img src="images/prof4.png" alt=""><span>Again?????!!!</span></div>
+            <hr>
+            <div class="h8">
+            <div id="newPost" class="hideData">
+                <img src="images/profilepic-small.png" alt=""><span id="message-content"></span>   
+               <hr>
+                </div>
+            </div>
+            <div id="typer">
+                <input class="send-message-box" type="text" placeholder="Type.." id="newMessageToPost" name="message">
+                <button class="send-message-button" onclick="addMessage()"><img id="enter-icon" src="images/enter.png" alt=""><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>&#169;Karolina Valentova / KEA 2018</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,742 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+
+    font-size: 14pt;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#keaLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 70%;
+}
+
+h3 {
+    font-size: 9pt;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 30%;
+}
+
+h5 {
+    font-size: 14pt;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    margin-left: 15%;
+    margin-bottom: 2%;
+    margin-top: 10px;
+}
+
+h6 {
+    font-size: 14pt;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login {
+    width: 70%;
+    padding: 14px 20px;
+    margin-left: 15%;
+    display: inline-block;
+    border: 1px white;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+
+#buttonLogin {
+    width: 30%;
+    padding: 8px 20px;
+    margin-left: 5%;
+    display: inline-block;
+    border: 3px solid white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14pt;
+    background-color: rgb(234, 80, 69);
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    text-align: center
+}
+
+select {
+    width: 35%;
+    padding: 8px 20px;
+    margin-left: 15%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14pt;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    text-align: center;
+    background-color: white;
+}
+
+
+#footer {
+    font-family: "Helvetica Neue LT Std";
+    color: rgb(14, 64, 101);
+    font-size: 9pt;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*//////////////// nav bar settings ///////////////////////*/
+
+#nav-menu {
+    display: flex;
+}
+
+.navBack {
+    background-color: rgb(14, 64, 101);
+    width: 360px;
+    height: 40px;
+    z-index: -1;
+    position: absolute;
+}
+
+#home {
+    background: url(images/color-kea-logo.png) no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 40px;
+}
+
+#message {
+    background: url(images/white-message.png) no-repeat;
+    background-size: contain;
+    margin-top: 6px;
+    margin-left: 110px;
+    width: 40px;
+    height: 30px;
+}
+
+#profile {
+    background: url(images/white-profile.png) no-repeat;
+    background-size: contain;
+    margin-top: 6px;
+    margin-left: 15px;
+    width: 40px;
+    height: 30px;
+}
+
+#settings {
+    background: url(images/white-settings.png) no-repeat;
+    background-size: contain;
+    margin-top: 6px;
+    width: 40px;
+    height: 30px;
+}
+
+hr {
+    border-color: rgb(255, 218, 73);
+    border-style: inset;
+    border-width: 0.5px;
+}
+
+.hr2 {
+    border-color: rgb(255, 218, 73);
+    border-style: inset;
+    border-width: 0.5px;
+    width: 100%;
+}
+
+#notification {
+    background: url(images/notification.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    left: 250px;
+    width: 20px;
+    height: 20px;
+    animation: glow .4s linear 0s infinite alternate;
+}
+
+@keyframes glow {
+0% {
+    filter: drop-shadow(0 0 3vw rgba(14, 64, 101, .6));
+    margin-top: 0%;
+}
+100% {
+    filter: drop-shadow(0 0 3.25vw white) drop-shadow(0 0 3.25vw rgba(0, 0, 255, 1));
+    margin-top: -2%;
+}
+}
+
+/*//////////////// Home page ///////////////////////*/
+
+h1 {
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    font-size: 30pt;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(14, 64, 101);
+}
+
+#transbox {
+    position: absolute;
+    z-index: -1;
+    width: 85%;
+    height: 65%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+#newscontainer {
+    position: relative;
+    margin-top: 15%;
+}
+
+#newsbox {
+    width: 75%;
+    height: 10%;
+    margin-left: 10%;
+    margin-right: 15%;
+    position: fixed;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+}
+
+p {
+    font-family: "Helvetica Neue LT Std";
+    color: rgb(14, 64, 101);
+    font-weight: lighter;
+    font-size: 9pt;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#schedule {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+/*//////////////////// Chatroom /////////////////////////*/
+
+
+#private-box {
+    width: 80%;
+    height: 60px;
+    margin-left: 10%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#create-chat {
+    width: 290px;
+    padding: 10px 20px;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: block;
+    border: 5px solid rgb(255, 218, 73);
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14pt;
+    background-color: white;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    text-align: center
+}
+
+#semester-chat {
+    width: 290px;
+    height: 50px;
+    padding: 10px 20px;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14pt;
+    background-color: white;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    text-align: center
+}
+
+#random-chat {
+    width: 290px;
+    padding: 10px 20px;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: block;
+    
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14pt;
+    background-color: white;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    text-align: center
+}
+
+#transbox-chat {
+    position: absolute;
+    z-index: -1;
+    width: 85%;
+    height: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+#notification-mmd {
+    background: url(images/notification.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    left: 310px;
+    top: 235px;
+    width: 25px;
+    height: 25px;
+    animation: glow .4s linear 0s infinite alternate;
+}
+
+#message-content {}
+
+#typer {
+    position: fixed;
+    bottom: 100px;
+    margin-left: 20px;
+}
+
+/*////////////////////  CREATE NEW CONVERSATION ///////////////*/
+
+#background-box {
+    width: 85%;
+    height: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: fixed;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    z-index: -1;
+}
+
+.container {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    margin-left: 8%;
+    margin-right: 3%;
+    font-size: 17px;
+    border: 3px solid rgb(255, 218, 73);
+    float: left;
+    width: 60%;
+    background: white;
+}
+
+form.example button {
+    width: 20%;
+    height: 50px;
+    background: rgb(255, 218, 73);
+    color: white;
+    font-size: 17px;
+    border: 3px solid white;
+    border-radius: 20px;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#enter-icon {
+    width: 40%;
+}
+
+#profile-pannel {
+    
+}
+
+/*//////////////////////////// PROFILE PAGE /////////////////////////////*/
+
+
+
+#profilepic {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+#name {
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+
+.bio {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #fffff1;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#web {
+    background: url(images/website.png);
+    background-size: contain;
+    padding: 20px;
+}
+
+#instagram {
+    background: url(images/instagram.png);
+    background-size: contain;
+    padding: 20px;
+    margin: 10px;
+}
+
+#github {
+    background: url(images/github.png);
+    background-size: contain;
+    padding: 20px;
+}
+
+#transbox-profile {
+    position: absolute;
+    z-index: -1;
+    width: 85%;
+    height: 45%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+/*/////////////// settings page /////////////////////*/
+
+#logout {
+    width: 30%;
+    padding: 8px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    border: 3px solid rgb(255, 218, 73);
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14pt;
+    background-color: white;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    text-align: center
+}
+
+.h7 {
+    font-size: 14pt;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+/*/////////////////// CHAT PAGES ////////////*/
+
+.showData {
+    display: block;
+}
+
+.hideData {
+    display: none;
+}
+
+.h8 {
+    font-size: 9pt;
+    font-family: "Helvetica Neue LT Std";
+    font-weight: Bold;
+    font-stretch: condensed;
+    color: rgb(14, 64, 101);
+}
+
+.send-message-box  {
+    padding: 10px;
+    margin-left: 4%;
+    margin-right: 3%;
+    margin-top: 100px;
+    font-size: 17px;
+    border: 3px solid rgb(255, 218, 73);
+    border-radius: 20px;
+    float: left;
+    width: 60%;
+    background: white;
+}
+
+.send-message-button {
+    width: 20%;
+    height: 50px;
+    margin-top: 100px;
+    background: rgb(255, 218, 73);
+    color: white;
+    font-size: 17px;
+    border: 3px solid white;
+    border-radius: 20px;
+    border-left: none;
+    cursor: pointer;
+}
+
+#transbox-set {
+    position: absolute;
+    z-index: -1;
+    width: 85%;
+    height: 42%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+
+/* Toast message */
+#success {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#success #img{
+	width: 50px;
+	height: 50px;
+    
+    float: left;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    box-sizing: border-box;
+
+    
+    background-color: #111;
+    color: #fff;
+}
+#success #desc{
+
+    
+    color: #fff;
+   
+    padding: 16px;
+    
+    overflow: hidden;
+	white-space: nowrap;
+}
+
+#success.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+#fail {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#fail #imgFail{
+	width: 50px;
+	height: 50px;
+    
+    float: left;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    box-sizing: border-box;
+
+    background-color: #111;
+    color: #fff;
+}
+#fail #descFail{
+    color: #fff;
+    padding: 16px;
+    overflow: hidden;
+	white-space: nowrap;
+}
+
+#fail.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes expand {
+    from {min-width: 50px} 
+    to {min-width: 350px}
+}
+
+@keyframes expand {
+    from {min-width: 50px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes stay {
+    from {min-width: 350px} 
+    to {min-width: 350px}
+}
+
+@keyframes stay {
+    from {min-width: 350px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 60px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 60px; opacity: 0;}
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="120">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Kea mobile app</title>
+</head>
+
+<body>
+    <nav id="nav-menu">
+        <div class="navBack"></div>
+        <a href="home.html" id="home"></a>
+        <a href="chatroom.html" id="message"></a>
+        <div id="notification"></div>
+        <a href="profile.html" id="profile"></a>
+        <a href="settings.html" id="settings"></a>
+    </nav>
+    
+    <hr>
+    <h1>Create new</h1>
+    <div id="background-box"><br>
+        <label class="container">Students
+            <input type="checkbox" checked="checked" name="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Teachers
+            <input type="checkbox" name="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <hr class="hr2">
+        <form class="example" action="/create.convers.html" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><img id="enter-icon" src="images/enter.png" alt=""><i class="fa fa-search"></i></button>
+        </form>
+        <hr class="hr2">
+
+  <!-- ////////// profiles //////////// -->
+
+        <div id="profile-pannel">
+            <input type="checkbox" name="checkbox">
+            <span class="checkmark"></span> <img src="images/prof1.png" alt="">Hungry Man
+            <hr>
+            <input type="checkbox" name="checkbox">
+            <span class="checkmark"></span><img src="images/prof2.png" alt="">Bad Student
+            <hr>
+            <input type="checkbox" name="checkbox">
+            <span class="checkmark"></span><img src="images/prof3.png" alt="">Helpme Please
+            <hr>
+            <input type="checkbox" name="checkbox">
+            <span class="checkmark"></span><img src="images/prof4.png" alt="">Random Guy
+            <hr>
+        </div>
+    </div>
+<div id="footer"><p>&#169;Karolina Valentova / KEA 2018</p></div>
+</body>
+</html>
